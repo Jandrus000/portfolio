@@ -1,0 +1,116 @@
+/* ===== Global Styles ===== */
+  :root {
+    --primary: #2b6cb0;
+    --light: #f7fafc;
+    --dark: #2d3748;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--primary);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  header p {
+    margin: .5rem 0 0;
+    font-size: 1.1rem;
+  }
+
+  nav {
+    background: #1a202c;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 1rem;
+    transition: background 0.3s;
+  }
+
+  nav a:hover {
+    background: #4a5568;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  h2 {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: .3rem;
+    margin-top: 2rem;
+  }
+
+
+  /* ===== About ===== */
+  .about-flex{
+    display: flex;
+    gap: 25px;
+  }
+
+  .about-flex > img{
+    object-fit: contain;
+    max-width: 250px;
+    margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    .about-flex{
+      flex-direction: column;
+    }
+  }
+
+  /* ===== Projects ===== */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: box-shadow 0.3s;
+  }
+
+  .project:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .project h3 {
+    margin-top: 0;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    background: #1a202c;
+    color: #e2e8f0;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  footer a {
+    color: #63b3ed;
+    text-decoration: none;
+  }
